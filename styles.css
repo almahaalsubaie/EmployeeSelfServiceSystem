@@ -1,0 +1,743 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.TFcontainer {
+    display:block ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 800px; /* Set a fixed height for the main container */
+    padding: 30px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+
+   
+}
+
+
+.homeContainer {
+    display:block ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    align-self: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 800px; /* Set a fixed height for the main container */
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+   
+}
+
+
+.login-container {
+    flex: 1;
+    padding: 40px;
+    background-color: #224480; /* Blue */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.header {
+    margin-bottom: 30px;
+    color: #ffffff; 
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group label {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.input-group input, .input-group select {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: lightgray;
+    color: #000000;
+    font-size: 16px;
+   
+}
+.input-group input[type="checkbox"] {
+    width: auto;
+}
+.checkbox-label {
+    display: inline-block;
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+.login-button{
+   appearance: none;
+  background-color: #fff; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #224480;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+}
+.login-button:hover {
+    background-color: #f0f0f0;
+     color: #224483;
+}
+.loginLogo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLogo {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+
+}
+
+.sidebar {
+    width: 64px;
+    height: 800px;
+    background-color: #184B87;
+    color: #ffffff;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+.homeLogo-container {
+    margin-bottom: 25px;
+}
+.homeLogo {
+    width: 100px;
+    height: auto;
+}
+ nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li {
+    margin-bottom: 25px;
+    text-align: center;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+nav ul li a .icon {
+    font-size: 2em;
+    display: block;
+}
+nav ul li a .label {
+    display: block;
+    margin-top: 5px;
+}
+.main-content {
+    flex: 1;
+    padding-left: 40px;
+    background-color: #ffffff;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+     margin-left: 100px;
+}
+.main-content h1 {
+    color: #3063BB;
+}
+.typesContainer {
+    flex: 0 0 auto; /* Do not allow the container to grow or shrink */
+    background-color: #C1CFDF;
+    padding: 40px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+
+}
+
+.formContainer {
+    flex: 0 0 auto; /* Allow the container to take remaining space */
+    background-color: #C1CFDF;
+    padding: 40px; /* Reduce padding to fit the container */
+    margin-left: 150px;
+    border-radius: 10px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling if form fields exceed container height */
+    width: 50%;
+   
+   
+}
+
+.dash1Container {
+    flex: 0 0 auto; /* Do not allow the container to grow or shrink */
+    background-color: #C1CFDF;
+    padding: 20px;
+    margin-left: 120px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 66.7%;
+    height: 25%;
+ 
+}
+
+
+.dash2Container {
+    flex: 0 0 auto; /* Do not allow the container to grow or shrink */
+    background-color: #C1CFDF;
+    padding: 30px;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    height: 25%;
+
+}
+
+
+.dash3Container {
+    flex: 0 0 auto; /* Do not allow the container to grow or shrink */
+    background-color: #C1CFDF;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+       margin-top: 40px;
+    border-radius: 10px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    height: 25%;
+    align-items: center;
+
+}
+
+.EtitlesRow{
+
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+    box-sizing: border-box;
+    height: 2%;
+}
+
+
+.AtitlesRow{
+
+    display: flex;
+    justify-content: space-between;
+    width: 57.5%;
+    box-sizing: border-box;
+    height: 2%;
+}
+
+
+
+
+
+.dashRow{
+
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    box-sizing: border-box;
+    height: 80%;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab-button {
+    background-color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+
+
+.view-button {
+  appearance: none;
+  background-color: #224480; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.view-button-A {
+  appearance: none;
+  background-color: #6A9B5F; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.view-button-R {
+  appearance: none;
+  background-color:#AB3535; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.view-button-V {
+  appearance: none;
+  background-color: #5D90BD; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #224483; 
+color: #f0f0f0;
+}
+
+
+
+.button-3:disabled {
+  background-color: #224483; /* Slightly different color for disabled state */
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #19315b; /* Same as hover state for active state */
+color: #f0f0f0;
+}
+
+.homeTable {
+    border-collapse: collapse; /* Ensures that the table borders are collapsed into a single border */
+    width: 100%; /* Optional: Makes the table take the full width of its container */
+  
+}
+
+.homeTable td {
+    border: none; /* Removes all borders from the table cells */
+    color: black; /* Sets the text color to white */
+    padding: 20px; /* Optional: Adds some padding inside the cells for better spacing */
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.recentTable {
+    border-collapse: collapse; /* Ensures that the table borders are collapsed into a single border */
+    width: 100%; /* Optional: Makes the table take the full width of its container */
+
+}
+
+.recentTable td {
+    border: none;
+    padding: 8px; /* Optional: Adds some padding inside the cells for better spacing */
+     color: black;
+     font-size: 12px;
+    font-weight: 100;
+}
+
+.tabs-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #bdc3c7;
+    border: none;
+    padding: 20px 30px; /* Increase padding for larger tabs */
+    margin: 0 5px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Increase font size for larger tabs */
+}
+
+.tab-link.active, .tab-link:hover {
+    background-color: #184B87;
+    color: #ecf0f1;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-radius: 0 10px 10px 10px;
+     overflow-y: auto;
+  
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tab-content table th, .tab-content table td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: left;
+}
+
+.tab-content table th {
+    background-color: #184B87;
+    color: #ecf0f1;
+}
+
+
+.tab-content table tr:hover {
+    background-color: #ddd;
+}
+
+.tab-content table td form button {
+ background-color: #19315b;
+    border: none;
+  color: #f0f0f0;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-content table td form button:hover {
+    background-color: #224483; 
+color: #f0f0f0;
+}
+
+.button-3  { 
+ appearance: none;
+  background-color: #fff; 
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 3px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #19315b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  padding: 4px 10px; /* Adjusted padding values */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.view-button:hover {
+    background-color: #224483 ;
+    color: #f0f0f0;
+}
+
+.view-button-login{ 
+  appearance: none;
+  background-color: #fff; /* Main button color */
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #224480;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;}
+
+.view-button-login:hover{  background-color: #f0f0f0 ;
+    color: #224483;}
+
+
+
+
+.ViewEmployee {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+         overflow-y: auto;
+}
+
+.ViewEmployee th, .ViewEmployee td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ViewEmployee th {
+    background-color: #184B87;
+    color: white;
+}
+
+
+
+.ViewEmployee tr:hover {
+    background-color: #ddd;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+}
+
+.icon-button:hover {
+    color: #224483;
+}
+
+.icon-button {
+  text-decoration: none; /* Remove underline from anchor */
+}
+
+.back-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  padding: 0; /* Remove default padding */
+}
+
+.back-button i {
+  font-size: 2.5em; /* Adjust the icon size as needed */
+  color: #224483; /* Adjust icon color */
+}
+
+.back-button:hover i {
+  color: #555; /* Adjust hover color */
+}
+
+    .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 300px;
+            border-radius: 8px;
+        }
+        .popup.active {
+            display: block;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #888;
+        }
+
+ .resend-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
